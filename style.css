@@ -1,3 +1,12 @@
+:root{
+    --speed:.1;
+}
+#first{
+    position: relative;
+}
+#second{
+    position: absolute;
+}
 .machine{
      background-color: aqua;
      border: dashed 5px red;
@@ -20,10 +29,17 @@
         z-index: 1;
         overflow: hidden;
 }
+#inpspeed{
+       font-size: 25pt;
+       margin-left: 200px;
+       margin-bottom: 300px;
+}
 .slot >.value
 {
     display: inline-block;
-    animation: slotspin infinite 0.2s;
+    animation-name: slotspin;
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: infinite;
     z-index: 2;
 
 }
