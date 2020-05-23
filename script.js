@@ -6,6 +6,7 @@ let values=['😁','😠','😙','😆','😏','😈','😸']
 function getRandom()
 {
     return values[Math.floor(Math.random()*7)];
+    
 }
 let Intervalid;
 let gameover=false;
